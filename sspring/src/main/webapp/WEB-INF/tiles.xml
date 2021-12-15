@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<definition name="login" template="/WEB-INF/pages/login.jsp" />
+	<definition name="registeruser" template="/WEB-INF/pages/registeruser.jsp" />
+	<definition name="base.layout"
+		template="/WEB-INF/mainPages/baselayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/mainPages/header.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/mainPages/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/mainPages/footer.jsp" />
+	</definition>
+
+
+	<definition name="home" extends="base.layout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/home.jsp" />
+	</definition>
+
+	<definition name="about" extends="base.layout">
+		<put-attribute name="title" value="About" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/about.jsp" />
+	</definition>
+
+	<definition name="contact" extends="base.layout">
+		<put-attribute name="title" value="Contact" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/contact.jsp" />
+	</definition>
+
+	<definition name="updateFarmerPage" extends="base.layout">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/update.jsp" />
+	</definition>
+</tiles-definitions>
